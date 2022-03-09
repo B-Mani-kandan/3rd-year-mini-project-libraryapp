@@ -5,7 +5,7 @@ import classes from './login.module.css'
 function LoginAdmin() {
   return (
     <div className={classes.login}>
-      <h1>Aamec Student Login</h1>
+      <h1>Aamec Admin Login</h1>
       <form>
         <label htmlFor='name' >Name</label>
          <input type='text' id='name'/>
