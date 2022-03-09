@@ -1,9 +1,54 @@
-.newDiv{
-  background-color: blue;
-  color: wheat;
+.holder{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiftBtn{
+  width: 40%;
+  margin-bottom: 40px;
+  display: flex;
   justify-content: space-around;
-  color: white;
+  flex-direction: row;
+  background: #aba5d4;
+box-shadow:  9px 9px 18px #6f6b8a,
+             -9px -9px 18px #e7dfff;
+  height: 80px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.button{
+  /* color: white; */
+  font-weight: 600;
+  font-family: cursive;
+  font-size: 26px;
+  border: none;
+  background-color: #aba5d4;
+  padding: 10px 30px;
+}
+
+
+
+.swiftBtn button{
+  width: 30%;
+  border-radius: 20px;
+}
+
+.active{
+  background-color: #9084df;
+
+}
+
+.login{
+  padding: 20px;
+  width: 40%;
+  height: 70%;
+  border-radius: 47px;
+background: #aba5d4;
+box-shadow:  9px 9px 18px #6f6b8a,
+             -9px -9px 18px #e7dfff;
 }
