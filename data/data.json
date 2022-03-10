@@ -1,0 +1,1442 @@
+[
+    {
+     "S.NO": 1,
+     "Title of the book": "Practical software testing",
+     "Authors": "Ilene Burnstein",
+     "Publishers": "springer"
+    },
+    {
+     "S.NO": 2,
+     "Title of the book": "Data communications and networking",
+     "Authors": "Behrouz A.Forouzan",
+     "Publishers": "Mc Graw hill"
+    },
+    {
+     "S.NO": 3,
+     "Title of the book": "Tanenbaum computer networks",
+     "Authors": "Andrew S.Tanenbaum",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 4,
+     "Title of the book": "Computer networks",
+     "Authors": "Larry L.peterson &bruce s.davie 3rd edition",
+     "Publishers": "Morgan Kaufmann"
+    },
+    {
+     "S.NO": 5,
+     "Title of the book": "Computer networks",
+     "Authors": "Larry L.peterson &bruce s.davie 5th edition",
+     "Publishers": "Morgan kaufmann"
+    },
+    {
+     "S.NO": 6,
+     "Title of the book": "Database system concepts",
+     "Authors": "Abraham silberschartz 6th edition",
+     "Publishers": "Mc graw hill"
+    },
+    {
+     "S.NO": 7,
+     "Title of the book": "Fundamentals of database systems",
+     "Authors": "Elmasri .Navathe 6th\nedition",
+     "Publishers": "pearson"
+    },
+    {
+     "S.NO": 8,
+     "Title of the book": "Unix networking programming(interprocess communication) 2nd edition",
+     "Authors": "w.Richard stevens",
+     "Publishers": "Prentice Hall PTR"
+    },
+    {
+     "S.NO": 9,
+     "Title of the book": "Applying Uml and patterns",
+     "Authors": "Craig Larman 2nd edition",
+     "Publishers": null
+    },
+    {
+     "S.NO": 10,
+     "Title of the book": "Operating system concepts",
+     "Authors": "Abraham Silberschartz,peter Baer galvin,greg gagne 9th edition",
+     "Publishers": "Wiley"
+    },
+    {
+     "S.NO": 11,
+     "Title of the book": "Operating system concepts",
+     "Authors": "Abraham Silberschartz,peter Baer galvin,greg gagne 6th edition",
+     "Publishers": "John Wiley &sons"
+    },
+    {
+     "S.NO": 12,
+     "Title of the book": "Operating system concepts",
+     "Authors": "Abraham Silberschartz,peter Baer galvin,greg gagne 7th edition",
+     "Publishers": "John Wiley & sons"
+    },
+    {
+     "S.NO": 13,
+     "Title of the book": "Linux system administration",
+     "Authors": "Tom Adelstein &Bill Lubanvoic",
+     "Publishers": "O’REILLY’"
+    },
+    {
+     "S.NO": 14,
+     "Title of the book": "Operating system concepts",
+     "Authors": "Abraham Silberschartz,peter Baer galvin,greg gagne 8th edition",
+     "Publishers": null
+    },
+    {
+     "S.NO": 15,
+     "Title of the book": "Operating systems",
+     "Authors": "William stallings 7th\nedition",
+     "Publishers": "pearson"
+    },
+    {
+     "S.NO": 16,
+     "Title of the book": "Artificial intelligence",
+     "Authors": "Stuart russsell,peter norvig",
+     "Publishers": "Prentice hall"
+    },
+    {
+     "S.NO": 17,
+     "Title of the book": "Artificial intelligence",
+     "Authors": "Kevin night & Elaine rich 3rd edition",
+     "Publishers": "Tata Mc Graw hill"
+    },
+    {
+     "S.NO": 18,
+     "Title of the book": "Computer Organization by Carl Hamacher",
+     "Authors": "Carl hamacher",
+     "Publishers": null
+    },
+    {
+     "S.NO": 19,
+     "Title of the book": "Introduction to cryptography with coding theory",
+     "Authors": "Lawerence c.washington",
+     "Publishers": "Pearson,prentice hall"
+    },
+    {
+     "S.NO": 20,
+     "Title of the book": "Cryptography and network security",
+     "Authors": "William stallings 4th\nedition",
+     "Publishers": "prentice hall"
+    },
+    {
+     "S.NO": 21,
+     "Title of the book": "Core JAVA",
+     "Authors": "Cay s.horstmann,gary cornell 9th edition",
+     "Publishers": "prentice hall"
+    },
+    {
+     "S.NO": 22,
+     "Title of the book": "Mobile communications",
+     "Authors": "Jochen schiller 2nd edition",
+     "Publishers": "Addision –wesley"
+    },
+    {
+     "S.NO": 23,
+     "Title of the book": "wireless communications",
+     "Authors": "Theodore s.Rappaport 2nd edition",
+     "Publishers": "prentice hall"
+    },
+    {
+     "S.NO": 24,
+     "Title of the book": "Fundamentals of wireless communication",
+     "Authors": "David tse ,pramod viswanath",
+     "Publishers": "cambridge"
+    },
+    {
+     "S.NO": 25,
+     "Title of the book": "Computer organization and design",
+     "Authors": "David a.peterson ,john l.Hennessy 3rd edition",
+     "Publishers": "Morgan Kaufmann"
+    },
+    {
+     "S.NO": 26,
+     "Title of the book": "Computer organization and architecture",
+     "Authors": "William stallings 8th\nedition",
+     "Publishers": "Prentice hall"
+    },
+    {
+     "S.NO": 27,
+     "Title of the book": "Computers as components",
+     "Authors": "Wayne wolf 2nd edition",
+     "Publishers": "Morgan Kaufmann"
+    },
+    {
+     "S.NO": 28,
+     "Title of the book": "wireless communications and networks",
+     "Authors": "William stallings 2nd\nediton",
+     "Publishers": "Pearson,prentice hall"
+    },
+    {
+     "S.NO": 29,
+     "Title of the book": "Practical software testing",
+     "Authors": "Ilene Burnstein",
+     "Publishers": "springer"
+    },
+    {
+     "S.NO": 30,
+     "Title of the book": "Distributed systems concepts and designs",
+     "Authors": "George coulouris,jean dolimore,tim kindberg,Gordon blair 5th edition",
+     "Publishers": "pearson"
+    },
+    {
+     "S.NO": 31,
+     "Title of the book": "Software design",
+     "Authors": "David budgen 2nd\nedition",
+     "Publishers": "Pearson,Addison wesley"
+    },
+    {
+     "S.NO": 32,
+     "Title of the book": "Software project management",
+     "Authors": "Bob hughes and mike cotterell,2nd edition",
+     "Publishers": "Mc Graw Hill"
+    },
+    {
+     "S.NO": 33,
+     "Title of the book": "The essential guide to user interface design",
+     "Authors": "Wilbert O.Galitz,2nd\nedition",
+     "Publishers": "Wilky computer"
+    },
+    {
+     "S.NO": 36,
+     "Title of the book": "Transforms And Partial Differential Equations",
+     "Authors": "N.Subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 37,
+     "Title of the book": "Transforms And Partial Differential Equations",
+     "Authors": "N.Subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 38,
+     "Title of the book": "Transforms And Partial Differential Equations",
+     "Authors": "N.Subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 39,
+     "Title of the book": "Transforms And Partial Differential Equations",
+     "Authors": "N.Subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 40,
+     "Title of the book": "Transforms And Partial Differential Equations",
+     "Authors": "N.Subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 41,
+     "Title of the book": "Transforms And Partial Differential Equations",
+     "Authors": "N.Subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 42,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 43,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 44,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 45,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 46,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 47,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 48,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 49,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 50,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 51,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 52,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 53,
+     "Title of the book": "Communication systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "Wiley india edition"
+    },
+    {
+     "S.NO": 54,
+     "Title of the book": "Anna University Solved Question Papers",
+     "Authors": "S.Bhaskaran S.Neelavathipari Mr.chellapandi H.Rangajadhan S.Priyadharshini M.mohana S.vijayalakshmi",
+     "Publishers": "Sruthi"
+    },
+    {
+     "S.NO": 55,
+     "Title of the book": "Transforms and partial differential equations (Anna university question and answer)",
+     "Authors": "N.subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 56,
+     "Title of the book": "Transforms and partial differential equations (Anna university question and answer)",
+     "Authors": "N.subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 57,
+     "Title of the book": "Transforms and partial differential equations (Anna university question and answer)",
+     "Authors": "N.subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 58,
+     "Title of the book": "Transforms and partial differential equations (Anna university question and answer)",
+     "Authors": "N.subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 59,
+     "Title of the book": "Transforms and partial differential equations (anna university question and answer)",
+     "Authors": "N.subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 60,
+     "Title of the book": "Transforms and partial differential equations (anna university question and answer)",
+     "Authors": "N.subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 61,
+     "Title of the book": "Transforms and partial differential equations (Anna university question and answer)",
+     "Authors": "N.subramaniam",
+     "Publishers": "Scm"
+    },
+    {
+     "S.NO": 62,
+     "Title of the book": "Programming with anisc++(a step by step approach)",
+     "Authors": "BhushanTrivedi",
+     "Publishers": "Oxford"
+    },
+    {
+     "S.NO": 63,
+     "Title of the book": "Digital Signal Processing",
+     "Authors": "Dr.J.S.Chitode",
+     "Publishers": "Technical Publication"
+    },
+    {
+     "S.NO": 64,
+     "Title of the book": "Web Programming",
+     "Authors": "A.A.puntambekar",
+     "Publishers": "Technical publication"
+    },
+    {
+     "S.NO": 65,
+     "Title of the book": "Computer Networks",
+     "Authors": "V.S.Bagad,I.A.Dhotr e",
+     "Publishers": "Technical Publication"
+    },
+    {
+     "S.NO": 66,
+     "Title of the book": "Data Warehousing and Data Mining",
+     "Authors": "VarshaBhosale DeapaliVora",
+     "Publishers": "Dreamtech PRESS"
+    },
+    {
+     "S.NO": 67,
+     "Title of the book": "Graphics and Multimedia",
+     "Authors": "A.P.Godse Dr.D.A.Godse",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 68,
+     "Title of the book": "Resource Management Techniques",
+     "Authors": "Prof.V.Sundaresan Prof.S.Ganapathy",
+     "Publishers": "A.R.Publications"
+    },
+    {
+     "S.NO": 69,
+     "Title of the book": "Graph Theory And Application",
+     "Authors": "S.Sathya, M.Umamaheswari",
+     "Publishers": "ARS\nPublications Chennai"
+    },
+    {
+     "S.NO": 70,
+     "Title of the book": "Environmental Science and Engineering",
+     "Authors": "PrabhuDevarathinam",
+     "Publishers": "AR Publication"
+    },
+    {
+     "S.NO": 71,
+     "Title of the book": "Software Testing",
+     "Authors": "M.Selvakumar",
+     "Publishers": "AR Publications"
+    },
+    {
+     "S.NO": 72,
+     "Title of the book": "Wireless Communication",
+     "Authors": "V.JeyaSriArokiamary",
+     "Publishers": "Technical Publication"
+    },
+    {
+     "S.NO": 73,
+     "Title of the book": "Software Testing",
+     "Authors": "Dr.D.Chitra Prof.A.Kaliappan",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 74,
+     "Title of the book": "Information Management",
+     "Authors": "AshaBharambeBhush anJadhar\nAnjali yeole",
+     "Publishers": "WILEY"
+    },
+    {
+     "S.NO": 75,
+     "Title of the book": "Database System Concepts",
+     "Authors": "Abraham Silberschatz Henry F.KorthS.Sundarshan",
+     "Publishers": "McGraw-Hill"
+    },
+    {
+     "S.NO": 76,
+     "Title of the book": "DatabaseManagementSystem",
+     "Authors": "Dr.R.Alageswaran Dr.s.Miruna Joe Amali",
+     "Publishers": "ARS Publications Chennai"
+    },
+    {
+     "S.NO": 77,
+     "Title of the book": "Web Programming",
+     "Authors": "S.Gomathi V.Praveena",
+     "Publishers": "AR Publications Chennai"
+    },
+    {
+     "S.NO": 78,
+     "Title of the book": "Software testing principles and pratices",
+     "Authors": "NareshChauhan",
+     "Publishers": "Oxford"
+    },
+    {
+     "S.NO": 79,
+     "Title of the book": "Foudation of software testing",
+     "Authors": "Dorothy Graham Erik Van Veenendaal Isabel Evans\nRex Black",
+     "Publishers": "Cengage Learning"
+    },
+    {
+     "S.NO": 80,
+     "Title of the book": "Xml AND Web services",
+     "Authors": "Ron Schmelzer et al.",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 81,
+     "Title of the book": "Digital Logic Application and Design",
+     "Authors": "John M. Yarbrough",
+     "Publishers": "Vikas Publishing House"
+    },
+    {
+     "S.NO": 82,
+     "Title of the book": "Taub’s Principles of Communication Systems",
+     "Authors": "Herbert Taub Donald L Schilling GoutamSaha",
+     "Publishers": "Tata McGraw-Hill Publishing Company Limited"
+    },
+    {
+     "S.NO": 83,
+     "Title of the book": "Programming with Ansi C++ A Step-By-Step Approach",
+     "Authors": "BhushanTrivedi",
+     "Publishers": "OXFORD UNIVERSITY PRESS"
+    },
+    {
+     "S.NO": 84,
+     "Title of the book": "Operating Systems",
+     "Authors": "R.Sudha",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 85,
+     "Title of the book": "Artificial Intelligence",
+     "Authors": "Dr.B.Kalavathi, P.Krishnashankar, N.P.Shangaranarayan ee",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 86,
+     "Title of the book": "Compiler Design",
+     "Authors": "K.Krishnakumari",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 87,
+     "Title of the book": "Mobile Computing",
+     "Authors": "H.Prabavathi",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 88,
+     "Title of the book": "Microprocessor & Microcontroller",
+     "Authors": "L.Balaji, A.Dhanalakshmi",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 89,
+     "Title of the book": "Service Oriented Architecture",
+     "Authors": "Dr.G.Pradeepa, J.Santhiya",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 90,
+     "Title of the book": "Design & Analysis of Algorithm",
+     "Authors": "G.Rajeswari, B.Nithya, K.Subha, M.Sreema",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 91,
+     "Title of the book": "Distributed Systems",
+     "Authors": "Dr.P.Meenakshidevi, M.Dhurgadevi",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 92,
+     "Title of the book": "Software Architecture",
+     "Authors": "G.Kousalya",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 93,
+     "Title of the book": "Grid & Cloud Computing",
+     "Authors": "D.Chitra&A.Kaliappa n",
+     "Publishers": "SCITECH"
+    },
+    {
+     "S.NO": 94,
+     "Title of the book": "Computer Architecture",
+     "Authors": "Dr.M.Venkatesan",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 95,
+     "Title of the book": "Cryptography & Network Security",
+     "Authors": "R.Sudha",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 96,
+     "Title of the book": "Software Testing",
+     "Authors": "M.Selvakumar",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 97,
+     "Title of the book": "Data warehousing & Data Mining",
+     "Authors": "N.Selvarani",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 98,
+     "Title of the book": "Computer Networks",
+     "Authors": "M.Anandha Kumar",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 99,
+     "Title of the book": "Service Oriented Architecture",
+     "Authors": "Dr.G.Pradeep",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 100,
+     "Title of the book": "Analog and Digital Communication",
+     "Authors": "B.S.Sathish Kumar",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 101,
+     "Title of the book": "Wireless Communication",
+     "Authors": "Dr.S.MaryPraveena",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 102,
+     "Title of the book": "Database Management Systems",
+     "Authors": "Dr.R.Alageswaran",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 103,
+     "Title of the book": "Object Oriented Analysis and Design",
+     "Authors": "P.KrishnaBankar",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 104,
+     "Title of the book": "Grid & Cloud Computing",
+     "Authors": "Dr.B.Kalavathi",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 105,
+     "Title of the book": "Information Management",
+     "Authors": "S.Arunprasath",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 106,
+     "Title of the book": "Programming & Data structures II",
+     "Authors": "Dr.M.Venkatesan",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 107,
+     "Title of the book": "Web Programming",
+     "Authors": "Web Programming",
+     "Publishers": "ARS Publication"
+    },
+    {
+     "S.NO": 108,
+     "Title of the book": "Graphics and Multimedia",
+     "Authors": "Dr.D.Anuradha",
+     "Publishers": "Suchitra\nPublication"
+    },
+    {
+     "S.NO": 109,
+     "Title of the book": "Cloud Computing",
+     "Authors": "A.Srinivasan",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 110,
+     "Title of the book": "Database System using Oracle",
+     "Authors": "Nilesh Shah",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 111,
+     "Title of the book": "Compiler Design",
+     "Authors": "S.GodfreyWinster, S.Arunadevi, R.Sujatha",
+     "Publishers": "Yesdee"
+    },
+    {
+     "S.NO": 112,
+     "Title of the book": "Cryptography & Network Security",
+     "Authors": "William Stallings",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 113,
+     "Title of the book": "Cryptography & Network Security",
+     "Authors": "William Stallings",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 114,
+     "Title of the book": "Cryptography & Network Security",
+     "Authors": "William Stallings",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 115,
+     "Title of the book": "Software Testing Principles and Practices",
+     "Authors": "SrinivasanDesikan, Gopalaswamy Ramesh",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 116,
+     "Title of the book": "Software Testing Principles and Practices",
+     "Authors": "SrinivasanDesikan, Gopalaswamy Ramesh",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 117,
+     "Title of the book": "Data Mining",
+     "Authors": "Jiawei Han, MichelineKamber",
+     "Publishers": "MK"
+    },
+    {
+     "S.NO": 118,
+     "Title of the book": "Data Mining",
+     "Authors": "Jiawei Han, MichelineKamber",
+     "Publishers": "MK"
+    },
+    {
+     "S.NO": 119,
+     "Title of the book": "Distributed and Cloud Computing",
+     "Authors": "Kai hwang- GeoferryC.Fox- Jack.J.Dongara",
+     "Publishers": "MK"
+    },
+    {
+     "S.NO": 120,
+     "Title of the book": "Master Data Management and Data Governance",
+     "Authors": "Alex Berson, Larry Dubov",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 121,
+     "Title of the book": "Soft Computing",
+     "Authors": "I.A.Dhotre",
+     "Publishers": "Technical Publication"
+    },
+    {
+     "S.NO": 122,
+     "Title of the book": "Software Architecture",
+     "Authors": "I.A.Dhotre",
+     "Publishers": "Technical Publication"
+    },
+    {
+     "S.NO": 123,
+     "Title of the book": "Service Oriented Architecture",
+     "Authors": "Dr.D.Chitra Prof.A.Kaliappan",
+     "Publishers": "Technical Publication"
+    },
+    {
+     "S.NO": 124,
+     "Title of the book": "Information Theory & Coding Techniques",
+     "Authors": "Dr.J.S.Chitode",
+     "Publishers": "Technical Publication"
+    },
+    {
+     "S.NO": 125,
+     "Title of the book": "Cyber Forensics",
+     "Authors": "Dr.L.JebaSheela",
+     "Publishers": "Chess Edu. Publications"
+    },
+    {
+     "S.NO": 126,
+     "Title of the book": "Software Testing",
+     "Authors": "Chauhan",
+     "Publishers": "Oxford"
+    },
+    {
+     "S.NO": 127,
+     "Title of the book": "Design and Analysis of Algorithm",
+     "Authors": "Sridhar",
+     "Publishers": "Oxford"
+    },
+    {
+     "S.NO": 128,
+     "Title of the book": "Principles of Operating Systems",
+     "Authors": "Chauhan",
+     "Publishers": "Oxford"
+    },
+    {
+     "S.NO": 129,
+     "Title of the book": "Circuits and Networks",
+     "Authors": "SukhijaNagsarkar",
+     "Publishers": "Oxford"
+    },
+    {
+     "S.NO": 130,
+     "Title of the book": "Compiler Design",
+     "Authors": "Muneeswaran",
+     "Publishers": "Oxford"
+    },
+    {
+     "S.NO": 131,
+     "Title of the book": "Computer Networks",
+     "Authors": "Trivedi",
+     "Publishers": "Oxford"
+    },
+    {
+     "S.NO": 132,
+     "Title of the book": "DataBase Systems",
+     "Authors": "Elmasri, Navathe",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 133,
+     "Title of the book": "DataBase Systems",
+     "Authors": "Elmasri, Navathe",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 134,
+     "Title of the book": "DataBase Systems",
+     "Authors": "Elmasri, Navathe",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 135,
+     "Title of the book": "DataBase Systems",
+     "Authors": "Elmasri, Navathe",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 136,
+     "Title of the book": "DataBase Systems",
+     "Authors": "Elmasri, Navathe",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 137,
+     "Title of the book": "DataBase Systems",
+     "Authors": "Elmasri, Navathe",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 138,
+     "Title of the book": "DataBase Systems",
+     "Authors": "Elmasri, Navathe",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 139,
+     "Title of the book": "DataBase Systems",
+     "Authors": "Elmasri, Navathe",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 140,
+     "Title of the book": "Computer Organization and Design V Edition",
+     "Authors": "Patterson Hennessy",
+     "Publishers": "MK"
+    },
+    {
+     "S.NO": 141,
+     "Title of the book": "Computer Organization and Design V Edition",
+     "Authors": "Patterson Hennessy",
+     "Publishers": "MK"
+    },
+    {
+     "S.NO": 142,
+     "Title of the book": "Computer Organization and Design V Edition",
+     "Authors": "Patterson Hennessy",
+     "Publishers": "MK"
+    },
+    {
+     "S.NO": 143,
+     "Title of the book": "Computer Organization and Design V Edition",
+     "Authors": "Patterson Hennessy",
+     "Publishers": "MK"
+    },
+    {
+     "S.NO": 144,
+     "Title of the book": "Computer Organization and Design V Edition",
+     "Authors": "Patterson Hennessy",
+     "Publishers": "MK"
+    },
+    {
+     "S.NO": 145,
+     "Title of the book": "Transforms and Partial Differential Equations",
+     "Authors": "Veerarajan",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 146,
+     "Title of the book": "Transforms and Partial Differential Equations",
+     "Authors": "Veerarajan",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 147,
+     "Title of the book": "Transforms and Partial Differential Equations",
+     "Authors": "Veerarajan",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 148,
+     "Title of the book": "Transforms and Partial Differential Equations",
+     "Authors": "Veerarajan",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 149,
+     "Title of the book": "Transforms and Partial Differential Equations",
+     "Authors": "Veerarajan",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 150,
+     "Title of the book": "Environmental Science and Engineering",
+     "Authors": "Joseph",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 151,
+     "Title of the book": "Environmental Science and Engineering",
+     "Authors": "Joseph",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 152,
+     "Title of the book": "Environmental Science and Engineering",
+     "Authors": "Joseph",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 153,
+     "Title of the book": "Environmental Science and Engineering",
+     "Authors": "Joseph",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 154,
+     "Title of the book": "Environmental Science and Engineering",
+     "Authors": "Joseph",
+     "Publishers": "McGraw Hill"
+    },
+    {
+     "S.NO": 155,
+     "Title of the book": "Software Engineering",
+     "Authors": "V.R.Kavitha",
+     "Publishers": "Magnus"
+    },
+    {
+     "S.NO": 156,
+     "Title of the book": "Probability and Queuing theory",
+     "Authors": "Palaniammal",
+     "Publishers": "PHI"
+    },
+    {
+     "S.NO": 157,
+     "Title of the book": "Data Structure using C",
+     "Authors": "Tenenbaum",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 158,
+     "Title of the book": "Data Structure & Algorithm Analysis in C++",
+     "Authors": "Weiss",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 159,
+     "Title of the book": "Data Structure & Algorithm Analysis in C++",
+     "Authors": "Weiss",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 160,
+     "Title of the book": "Data Structure & Algorithm Analysis in C++",
+     "Authors": "Weiss",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 161,
+     "Title of the book": "Data Structure & Algorithm Analysis in C++",
+     "Authors": "Weiss",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 162,
+     "Title of the book": "Data Structure & Algorithm Analysis in C++",
+     "Authors": "Weiss",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 163,
+     "Title of the book": "Advanced Electronics Communication Systems",
+     "Authors": "Tomasi",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 164,
+     "Title of the book": "Advanced Electronics Communication Systems",
+     "Authors": "Tomasi",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 165,
+     "Title of the book": "Advanced Electronics Communication Systems",
+     "Authors": "Tomasi",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 166,
+     "Title of the book": "Advanced Electronics Communication Systems",
+     "Authors": "Tomasi",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 167,
+     "Title of the book": "Advanced Electronics Communication Systems",
+     "Authors": "Tomasi",
+     "Publishers": "Pearson"
+    },
+    {
+     "S.NO": 168,
+     "Title of the book": "Information Technology Essentials",
+     "Authors": "Puntambekar, Dhotre, Sonia",
+     "Publishers": "Technical Publication"
+    },
+    {
+     "S.NO": 169,
+     "Title of the book": "Web Programming",
+     "Authors": "A.A.Puntambekar",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 170,
+     "Title of the book": "Computer Networks",
+     "Authors": "V.S.Bagad&I.A.Dhotre",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 171,
+     "Title of the book": "Graphics and Multimedia",
+     "Authors": "A.P.Godse&Dr.D.A.Godse",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 172,
+     "Title of the book": "Digital Signal Processing",
+     "Authors": "Dr.J.S.Chitode",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 173,
+     "Title of the book": "Wireless Communication",
+     "Authors": "V.JeyasriArokiamary",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 174,
+     "Title of the book": "Environmental Science & Engineering",
+     "Authors": "Joseph",
+     "Publishers": "McGraw Hill Education"
+    },
+    {
+     "S.NO": 175,
+     "Title of the book": "Guide to computer Forensics\n& Investigation",
+     "Authors": "Nelson, Philips, Steuart",
+     "Publishers": "CENAGE"
+    },
+    {
+     "S.NO": 176,
+     "Title of the book": "Human Computer Interaction",
+     "Authors": "Dix Finlay, abowdbeal",
+     "Publishers": "Pearson Education"
+    },
+    {
+     "S.NO": 177,
+     "Title of the book": "Artificial Intelligence",
+     "Authors": "Elaine Rich, Kevin Knight",
+     "Publishers": "McGraw Hill Education"
+    },
+    {
+     "S.NO": 178,
+     "Title of the book": "Artificial Intelligence",
+     "Authors": "Elaine Rich, Kevin Knight",
+     "Publishers": "McGraw Hill Education"
+    },
+    {
+     "S.NO": 179,
+     "Title of the book": "Microprocessor & Microcontroller",
+     "Authors": "P.S.Manoharan",
+     "Publishers": "Charulatha Publication"
+    },
+    {
+     "S.NO": 180,
+     "Title of the book": "Computer Organization",
+     "Authors": "Carl Hamecher, ZvonkoYranesic",
+     "Publishers": "McGraw Hill Education"
+    },
+    {
+     "S.NO": 181,
+     "Title of the book": "Manorama Year Book",
+     "Authors": "K.M.Mathew",
+     "Publishers": "MalayalaManorama"
+    },
+    {
+     "S.NO": 182,
+     "Title of the book": "Engineering Graphics",
+     "Authors": "K.V.Natarajan",
+     "Publishers": "K.V.N"
+    },
+    {
+     "S.NO": 183,
+     "Title of the book": "Communication Systems",
+     "Authors": "Simon Haykin",
+     "Publishers": "WSE"
+    },
+    {
+     "S.NO": 184,
+     "Title of the book": "Analog & Digital Communication",
+     "Authors": "Dr.J.S.Chitode",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 185,
+     "Title of the book": "Problem Solving & Python Programming",
+     "Authors": "Dr.V.RameshBabu, M.Munirathnam",
+     "Publishers": "VRB"
+    },
+    {
+     "S.NO": 186,
+     "Title of the book": "Computer Practices Laboratory",
+     "Authors": "Dr.V.RameshBabu, M.Munirathnam",
+     "Publishers": "VRB"
+    },
+    {
+     "S.NO": 187,
+     "Title of the book": "Problem Solving & Python Programming",
+     "Authors": "ReemaThareja",
+     "Publishers": "OXFORD"
+    },
+    {
+     "S.NO": 188,
+     "Title of the book": "Problem Solving & Python Programming",
+     "Authors": "ReemaThareja",
+     "Publishers": "OXFORD"
+    },
+    {
+     "S.NO": 189,
+     "Title of the book": "Problem Solving & Python Programming",
+     "Authors": "ReemaThareja",
+     "Publishers": "OXFORD"
+    },
+    {
+     "S.NO": 190,
+     "Title of the book": "Java One step ahead",
+     "Authors": "Anitha Seth, B.L.Junega",
+     "Publishers": "OXFORD"
+    },
+    {
+     "S.NO": 191,
+     "Title of the book": "Data Structures Using C",
+     "Authors": "ReemaThareja",
+     "Publishers": "OXFORD"
+    },
+    {
+     "S.NO": 192,
+     "Title of the book": "Analog & Digital Communication",
+     "Authors": "Dr.K.Muralibabu, Dr.L.Agilandeeswari",
+     "Publishers": "Suchitra Publications"
+    },
+    {
+     "S.NO": 193,
+     "Title of the book": "Human Computer Interaction",
+     "Authors": "P.Krishnashankar, N.P.Shangaranarayanee",
+     "Publishers": "A.R.Publications"
+    },
+    {
+     "S.NO": 194,
+     "Title of the book": "A Cop Walks down Memory Lane",
+     "Authors": "K.Manickavasagam",
+     "Publishers": "Meera fine Arts"
+    },
+    {
+     "S.NO": 195,
+     "Title of the book": "Human Resource Management",
+     "Authors": "Dr.M.Sivakumar M.Arokiaraj",
+     "Publishers": "Suchitra Publications"
+    },
+    {
+     "S.NO": 196,
+     "Title of the book": "Communication & Networking",
+     "Authors": "John Cowley",
+     "Publishers": "Springer"
+    },
+    {
+     "S.NO": 197,
+     "Title of the book": "Multimedia Compression & Communication",
+     "Authors": "L.Gopinath",
+     "Publishers": "Suchitra Publications"
+    },
+    {
+     "S.NO": 198,
+     "Title of the book": "Wireless communication",
+     "Authors": "Dr.K.Muralibabu",
+     "Publishers": "Suchitra Publications"
+    },
+    {
+     "S.NO": 199,
+     "Title of the book": "Graphics & Multimedia",
+     "Authors": "Dr.Anuradha",
+     "Publishers": "Suchitra Publications"
+    },
+    {
+     "S.NO": 200,
+     "Title of the book": "Wireless communication",
+     "Authors": "S.Jaya",
+     "Publishers": "Lakshmi Publications"
+    },
+    {
+     "S.NO": 201,
+     "Title of the book": "Information management",
+     "Authors": "P.Rajesh V.Vinoth",
+     "Publishers": "Suchitra Publications"
+    },
+    {
+     "S.NO": 202,
+     "Title of the book": "Computer Networks",
+     "Authors": "Dr.K.Muralibabu",
+     "Publishers": "Suchitra Publications"
+    },
+    {
+     "S.NO": 203,
+     "Title of the book": "Web Programming (Tamil)",
+     "Authors": "Edwin Dyanad K.Selvakumar",
+     "Publishers": "N.V. Publications"
+    },
+    {
+     "S.NO": 204,
+     "Title of the book": "Probability and Queuing Theory",
+     "Authors": "Dr.A.Singaravelu",
+     "Publishers": "Meenakshi Publications"
+    },
+    {
+     "S.NO": 205,
+     "Title of the book": "Python for software Design",
+     "Authors": "Alien B.Downey",
+     "Publishers": "Cambridge"
+    },
+    {
+     "S.NO": 206,
+     "Title of the book": "Python for software Design",
+     "Authors": "Alien B.Downey",
+     "Publishers": "Cambridge"
+    },
+    {
+     "S.NO": 207,
+     "Title of the book": "Computer Practices Laboratory",
+     "Authors": "V.Rameshbabu M.Munirathnam",
+     "Publishers": "VRB Publishers"
+    },
+    {
+     "S.NO": 208,
+     "Title of the book": "Internet and Web Technology",
+     "Authors": "Rajkamal",
+     "Publishers": "Tata McGrawhill"
+    },
+    {
+     "S.NO": 209,
+     "Title of the book": "Oracle Visual Basic",
+     "Authors": "-",
+     "Publishers": "SSI Press"
+    },
+    {
+     "S.NO": 210,
+     "Title of the book": "Computer Programming",
+     "Authors": "N.Ashok",
+     "Publishers": "PEARSON"
+    },
+    {
+     "S.NO": 211,
+     "Title of the book": "LIFCO Dictionary",
+     "Authors": "-",
+     "Publishers": "LIFCO"
+    },
+    {
+     "S.NO": 212,
+     "Title of the book": "English to Tamil Dictionary",
+     "Authors": "-",
+     "Publishers": "IlakkumiPathipakam"
+    },
+    {
+     "S.NO": 213,
+     "Title of the book": "Information Storage Management",
+     "Authors": "I.A.Dhotre",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 214,
+     "Title of the book": "Computer graphics & Multimedia",
+     "Authors": "A.P.Godse",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 215,
+     "Title of the book": "Mobile Communications",
+     "Authors": "V.Jeyasri Arokiasamy",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 216,
+     "Title of the book": "Computational Intelligence",
+     "Authors": "Anamitra Deshmukh",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 217,
+     "Title of the book": "Embedded Systems",
+     "Authors": "I.A.Dhotre",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 218,
+     "Title of the book": "Software Testing",
+     "Authors": "Dr.D.Chitra",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 219,
+     "Title of the book": "Mindscapes : English for Technologies & Engineering",
+     "Authors": "-",
+     "Publishers": "Orient Black Swan"
+    },
+    {
+     "S.NO": 220,
+     "Title of the book": "Soft Skills",
+     "Authors": "Dr.K.Alex",
+     "Publishers": "S.Chand"
+    },
+    {
+     "S.NO": 221,
+     "Title of the book": "Quantitative Aptitude",
+     "Authors": "Dr.S.Agarwal",
+     "Publishers": "S.Chand"
+    },
+    {
+     "S.NO": 222,
+     "Title of the book": "Computer Science for Competitions",
+     "Authors": "Dr.P.Nagpal",
+     "Publishers": "S.Chand"
+    },
+    {
+     "S.NO": 223,
+     "Title of the book": "Virtualization Fundamentals",
+     "Authors": "-",
+     "Publishers": "ICT Academy"
+    },
+    {
+     "S.NO": 224,
+     "Title of the book": "Service Oriented Architecture",
+     "Authors": "Thomas Erl",
+     "Publishers": "Pearson Education"
+    },
+    {
+     "S.NO": 225,
+     "Title of the book": "Applying UML & Patterns",
+     "Authors": "Craig Larman",
+     "Publishers": "Pearson Education"
+    },
+    {
+     "S.NO": 226,
+     "Title of the book": "Service Oriented Architecture",
+     "Authors": "R.Manjuladevi S.Ramya",
+     "Publishers": "Charulatha Publications"
+    },
+    {
+     "S.NO": 227,
+     "Title of the book": "XML & Web Services",
+     "Authors": "Ronschmelzer",
+     "Publishers": "Pearson Education"
+    },
+    {
+     "S.NO": 228,
+     "Title of the book": "Problem Solving & Python Programming",
+     "Authors": "Dr.V.RameshBabu, M.Munirathnam",
+     "Publishers": "VRB"
+    },
+    {
+     "S.NO": 229,
+     "Title of the book": "Network Management Principles & Practice",
+     "Authors": "Mani Subramanian",
+     "Publishers": "Pearson Education"
+    },
+    {
+     "S.NO": 230,
+     "Title of the book": "Unix Network Programming. The Sockets networking API.",
+     "Authors": "W.Richard Stevenes, Bill Fener",
+     "Publishers": "PHI"
+    },
+    {
+     "S.NO": 231,
+     "Title of the book": "Software Engineering A Practitioner’s Approach",
+     "Authors": "Roger S.Pressman",
+     "Publishers": "McGraw Hill Education"
+    },
+    {
+     "S.NO": 232,
+     "Title of the book": "Multi-core Architectures & Programming",
+     "Authors": "Dr.M.A.Berlin Mrs.G.Amudha",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 233,
+     "Title of the book": "Computer Architecture",
+     "Authors": "A.P.Godse",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 234,
+     "Title of the book": "Design  & Analysis of Algorithm",
+     "Authors": "A.A.Puntambekar",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 235,
+     "Title of the book": "Software Testing",
+     "Authors": "Dr.D.Chitra",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 236,
+     "Title of the book": "Agile Methodologies",
+     "Authors": "A.Priya",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 237,
+     "Title of the book": "Database Management Systems",
+     "Authors": "A.A.Puntambekar",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 238,
+     "Title of the book": "Software Engineering",
+     "Authors": "A.A.Puntambekar",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 239,
+     "Title of the book": "Information Storage Management",
+     "Authors": "I.A.Dhotre",
+     "Publishers": "Technical Publications"
+    },
+    {
+     "S.NO": 240,
+     "Title of the book": "Software Project Management",
+     "Authors": "Dr.V.Latha Jothi",
+     "Publishers": "Suchitra Publications"
+    },
+    {
+     "S.NO": 241,
+     "Title of the book": "Operating Systems",
+     "Authors": "R.Ruhin Kouser",
+     "Publishers": "Suchitra Publications"
+    },
+    {
+     "S.NO": 242,
+     "Title of the book": "Microprocessors and Microcontrollers",
+     "Authors": "L.Gopinath",
+     "Publishers": "Lakshmi Publications"
+    }
+   ]
