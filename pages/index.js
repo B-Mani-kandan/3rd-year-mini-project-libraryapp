@@ -2,12 +2,11 @@ import { useState } from "react";
 import LoginAdmin from "../components/LoginAdmin";
 import LoginCard from "../components/LoginCard";
 import LoginCardTeacher from "../components/LoginCardTeacher";
-
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  const [btn, setBtn] = useState("Student");
-
+ 
+const[btn,setBtn] = useState( 'Student')
   let loginDiv 
   switch (btn) {
     case 'Student':

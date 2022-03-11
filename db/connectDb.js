@@ -8,7 +8,8 @@ async function dbConnect() {
     //   useCreateIndex: true,
     //   useFindAndModify: false
     // });
-    await mongoose.connect('mongodb://localhost:27017/libaryapp', { useNewUrlParser: true,useUnifiedTopology: true, });
+    console.log('hi')
+    await mongoose.connect('mongodb://localhost:27017/libaryappnew', { useNewUrlParser: true,useUnifiedTopology: true, });
     console.log("Mongodb connected");
   } catch (error) {
     console.log(error);
