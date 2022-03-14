@@ -8,11 +8,14 @@ import styles from "../styles/Home.module.css";
 
 
 
-const dasboard = ({BooksData,jwt,UserData,requestedBooks}) => {
+const Dasboard = ({BooksData,jwt,UserData,requestedBooks,returnBooks}) => {
 
 
   let [myRequestedBooks,setMyRequestedBooks] = useState(requestedBooks)
 
+  let [rBooks,setReturnBooks] = useState(returnBooks)
+
+  let [myBooks,setMyBooks] = useState(UserData[0].Books)
 
   let [Books,setBooks] = useState(BooksData)
   
@@ -42,7 +45,7 @@ const dasboard = ({BooksData,jwt,UserData,requestedBooks}) => {
   return (
     <div>
       <NavBar Regno={UserData[0].Regno} name={UserData[0].Name}/>
-      <section style={{ maxWidth: "1100px", margin: "50px auto" }}>
+      <main style={{ maxWidth: "1100px", margin: "50px auto" }}>
         <div className={styles.main}>
           <div className={styles.booksDesign}>
             <Book/>
@@ -68,19 +71,35 @@ const dasboard = ({BooksData,jwt,UserData,requestedBooks}) => {
         </div>
 
       <h1 style={{margin:'120px 0 30px 0',fontSize:'40px'}}>Books Mangement</h1>
-      <AboutBooks setMyRequestedBooks={setMyRequestedBooks} bookList ={booksList()} BooksData={Books} jwt={jwt}/>
+      <AboutBooks  setMyRequestedBooks={setMyRequestedBooks} bookList ={booksList()} BooksData={Books} jwt={jwt}/>
 
       <h1 style={{margin:'120px 0 30px 0',fontSize:'40px'}}>My Books</h1>
-      <Mybook/>
+      <Mybook setReturnBooks={setReturnBooks} UserData={UserData} myBooks={myBooks} setMyBooks={setMyBooks}/>
 
+      <section>
       <h1 style={{margin:'120px 0 30px 0',fontSize:'40px'}}>Requested Books</h1>
       <div>
-      {myRequestedBooks.map(d=><div key={d._id} style={{border:'3px solid white',padding:'2%',marginBottom:'20px',borderRadius:'4px',backgroundColor:'white'}}>
+      {myRequestedBooks.length === 0 && <h2>If you want get  book from libary then Please Make Get Request </h2>} 
+      {myRequestedBooks.length>0 && myRequestedBooks.map(d=><div key={d._id} style={{border:'3px solid white',padding:'2%',marginBottom:'20px',borderRadius:'4px',backgroundColor:'white'}}>
        <h3>{d.Title}</h3>
        <p style={{color:'red'}}>Wating for Admin Confirmation</p> 
       </div>)}
       </div>
       </section>
+
+     <section>
+      <h1 style={{margin:'120px 0 30px 0',fontSize:'40px'}}>Return Request</h1>
+      <div>
+      {rBooks.length===0 && <h2>If you want return your book to libary then Please Make Return Request </h2>}
+      {rBooks.length>0 && rBooks.map(d=><div key={d._id} style={{border:'3px solid white',padding:'2%',marginBottom:'20px',borderRadius:'4px',backgroundColor:'white'}}>
+       <h3>{d.Title}</h3>
+       <p style={{color:'red'}}>Wating for Admin Confirmation</p> 
+      </div>)}
+      </div>
+      </section>
+
+
+      </main>
     </div>
   );
 };
@@ -105,12 +124,13 @@ export async function getServerSideProps(ctx) {
   let BooksData = Data.data
   let requestedBooks = Data.requestedBooks
   let UserData = Data.user
+  let returnBooks = Data.returnBooks
 
   return {
-    props: { BooksData ,jwt,UserData,requestedBooks},
+    props: { BooksData ,jwt,UserData,requestedBooks,returnBooks},
   }
 
 }
 
 
-export default dasboard;
+export default Dasboard;

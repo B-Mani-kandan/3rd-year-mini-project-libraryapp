@@ -1,9 +1,26 @@
 import Link from 'next/link'
 import React from 'react'
 import styles from './global.module.css'
+import { useRouter } from "next/router";
 
 const NavBar = ({Regno,name}) => {
 
+  const router = useRouter();
+
+  let logoutHandler = async() =>{
+    const Books = await fetch(
+      `http://localhost:3000/api/logout`
+      )
+     
+      let res = await Books.json()
+    
+      console.log(res)
+
+      if (res.message == 'Successfuly logged out!') {
+        router.push("/");
+      }
+      
+  }
   return (
     <nav className={styles.nav}>
 
@@ -13,7 +30,7 @@ const NavBar = ({Regno,name}) => {
        </div>
 
         <Link href="#">
-          <a>Log out</a>
+          <a onClick={logoutHandler}>Log out</a>
         </Link>
     </nav>
   )

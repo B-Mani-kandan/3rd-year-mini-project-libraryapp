@@ -7,6 +7,8 @@ import User from '../models/User'
 import Admin from '../models/Admin'
 
 export const addBooks = async () => {
+  await Book.deleteMany({})
+
   for (let d of data) {
     let bk = new Book({
       Title: d["Title of the book"],
@@ -19,7 +21,7 @@ export const addBooks = async () => {
 };
 
 export const addUsers = async() =>{
-  // await User.deleteMany({})
+  await User.deleteMany({})
    for (let d of itData){
      let itUser = new User({
       Regno:d.Regno,

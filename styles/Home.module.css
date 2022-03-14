@@ -105,3 +105,25 @@ box-shadow:  9px 9px 18px #6f6b8a,
   color: #5c49db;
   text-align: center;
 }
+
+.table{
+  border-collapse: collapse;
+}
+
+.table td{
+  border-collapse:collapse;
+  border:1px solid #dddddd;
+}
+
+.table td{
+  width: 28%;
+  padding: 15px 10px;
+}
+
+.table th{
+  /* color: #5c49db; */
+  padding: 15px 10px;
+  text-align: left;
+  border-collapse:collapse;
+  border:1px solid #dddddd;
+}

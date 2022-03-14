@@ -8,7 +8,7 @@ function LoginCard() {
   let [Regno, setRegno] = useState();
   let [DOB, setDOB] = useState();
 
-  const [btn, setBtn] = useState("Student");
+
 
   const router = useRouter();
 

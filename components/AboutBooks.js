@@ -13,7 +13,12 @@ function AboutBooks({ bookList, BooksData,jwt,setMyRequestedBooks }) {
 
   let CurrentBookId = async(currentBook) =>{
     let libaryBooks =  currentBook.filter((d) => d.currentHolder === "libary")
+    if(libaryBooks.length===0){
+      alert('no books are available')
+      return
+    }
     let curentBookid = libaryBooks[0]._id 
+    
     const res = await fetch(`http://localhost:3000/api/add`, {
       method: "POST",
       headers: {
@@ -45,8 +50,8 @@ function AboutBooks({ bookList, BooksData,jwt,setMyRequestedBooks }) {
           <h3>Publisher : {currentBook[0]["Publishers"]}</h3>
           <h3>Total number of Books : {currentBook.length}</h3>
           <h3>
-            Total number of Books Avaliable :{" "}
-            {currentBook.map((d) => d.currentHolder === "libary").length}
+            Total number of Books Avaliable :
+            {currentBook.filter((d) => d.currentHolder === "libary").length}
           </h3>
           <button
             className={styles.btn}

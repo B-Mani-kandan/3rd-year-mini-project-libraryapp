@@ -4,6 +4,7 @@ import Book from '../../models/Book'
 import User from '../../models/User'
 import { verify } from "jsonwebtoken";
 import mongoose from "mongoose";
+dbConnect()
 
 export default async function handler(req, res) {
 
@@ -14,11 +15,8 @@ export default async function handler(req, res) {
 
  let Regno = dataFromToken.Regno
 
-  dbConnect()
 	let data = await Book.find({})
-	let user = await User.find({Regno})
-
-
+	let user = await User.find({Regno}).populate({path:'Books'})
 
   let requestedBooksId = user[0].RequestedBooks
 
@@ -31,8 +29,17 @@ export default async function handler(req, res) {
     '_id': { $in: requestedBooksOperator}
 })
 
+  let returnBooksId = user[0].ReturnBooks
 
-  // console.log(requestedBooks)
+  let returnBookOperator = []
+  for (let d of returnBooksId){
+    returnBookOperator.push(mongoose.Types.ObjectId(d.BookId))
+}
 
-  res.status(200).json({data,user,requestedBooks})
+let returnBooks = await Book.find({
+  '_id': { $in: returnBookOperator}
+})
+
+
+  res.status(200).json({data,user,requestedBooks,returnBooks})
 }
