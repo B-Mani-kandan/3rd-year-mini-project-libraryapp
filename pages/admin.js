@@ -9,6 +9,10 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
   let [rB,setRb] = useState([])
   let [allBooks,setallBooks] = useState(data)
 
+  const [title, setTitle] = useState('')
+  const [author, setAuthor] = useState('')
+  const [publiser, setPubliser] = useState('')
+
   useEffect(() => {
     let studetsData = allBooks.filter((data, i) => data.currentHolder != "libary");
 
@@ -114,6 +118,23 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
       }
       setRb(tempReturn)
       setallBooks(data)
+  }
+
+
+  let onAddBookHandler = async(BookTitle,BookAuthor,BookPublishers) =>{
+    const res = await fetch(`http://localhost:3000/api/addbook`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        BookTitle,
+        BookAuthor,
+        BookPublishers
+      }),
+    });
+    let response = await res.json();
+    setallBooks(response)
   }
 
 
@@ -263,6 +284,37 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
             </tbody>
           </table>
         </section>
+
+
+      <section>
+      <h2
+            style={{
+              margin: "100px 0 0 0",
+              textAlign: "center",
+              color: "#5c49db",
+            }}
+          >
+            Add Books
+          </h2>
+       
+
+
+      <section className={styles.holder}>
+      <div className={styles.login}>
+       <form>
+             <label htmlFor='bookid'>Title of the book</label>
+             <input type='text'  onChange={(e)=>setTitle(e.target.value)}/>
+             <label htmlFor='bookid'>Authors</label>
+             <input type='text'  onChange={(e)=>setAuthor(e.target.value)}/>
+             <label htmlFor='bookid'>Publishers</label>
+             <input type='text'  onChange={(e)=>setPubliser(e.target.value)}/>
+
+             <button onClick={()=>onAddBookHandler(title,author,publiser) } type='button'>Submit</button>
+           </form>
+       </div>
+      </section>
+     
+      </section>
 
 
       </section>
