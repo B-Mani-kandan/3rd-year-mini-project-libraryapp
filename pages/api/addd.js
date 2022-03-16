@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   // await addUsers()
   await addUsers()
   await addBooks()
-//   await addAdmin()
+  await addAdmin()
     let data =  await Admin.find({})
 
     res.status(200).json(data)

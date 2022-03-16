@@ -55,7 +55,7 @@ function AboutBooks({ bookList, BooksData,jwt,setMyRequestedBooks }) {
           </h3>
           <button
             className={styles.btn}
-            style={{ marginRight: "3%", border: "3px solid green" }}
+            style={{ marginRight: "3%"}}
             onClick={()=>CurrentBookId(currentBook)}
           >
             Request Book

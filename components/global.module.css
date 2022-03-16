@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     font-size: 40px;
-    background: #aba5d4;
+    background-color: #00bfff;
+    /* background: #aba5d4; */
     box-shadow:  9px 9px 18px #6f6b8a,
                  -9px -9px 18px #e7dfff;
     align-items: center;
@@ -59,7 +60,9 @@
     font-size: 24px;
     font-weight: 600;
     font-family: cursive;
-    background: #aba5d4;
+    background: #fff;
+    border-radius: 4px;
+    color: #00bfff;
     border: 3px solid white;
     border-radius: 1000px;
 }
@@ -68,6 +71,7 @@
     width: 100%;
     height: 10%;
     position: sticky;
+    border-radius: 4px;
     top: 0;
     background-color: #5c49db;
     color: white;
@@ -76,5 +80,5 @@
 }
 
 .btn:hover{
-    background: #948bd3;
+    background: rgb(224, 224, 224);
 }

@@ -17,6 +17,8 @@ export const addBooks = async () => {
       currentHolder:"libary"
     });
     await bk.save()
+    console.log('added')
+
   }
 };
 
@@ -30,10 +32,13 @@ export const addUsers = async() =>{
       Department:d.Department,
      });
      await itUser.save()
+     console.log('added')
    } 
 }
 
 export const addAdmin = async() =>{
+  await Admin.deleteMany({})
+
   let admin = new Admin({
     ID:123,
     PWD:'123',
@@ -41,4 +46,6 @@ export const addAdmin = async() =>{
   })
 
   await admin.save()
+  console.log('added')
+
 }

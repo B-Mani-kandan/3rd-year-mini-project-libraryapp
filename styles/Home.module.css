@@ -14,6 +14,7 @@
   justify-content: space-around;
   flex-direction: row;
   background: #aba5d4;
+  /* background: #aba5d4; */
 box-shadow:  9px 9px 18px #6f6b8a,
              -9px -9px 18px #e7dfff;
   height: 80px;
@@ -102,7 +103,7 @@ box-shadow:  9px 9px 18px #6f6b8a,
 }
 
 .main h1{
-  color: #5c49db;
+  color: #fff;
   text-align: center;
 }
 
