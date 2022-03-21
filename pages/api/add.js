@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   const secret = "arunmani";
   const { method } = req;
   if (method === "POST") {
-
+    try{
     let { bookid } = req.body;
     let jwt = req.headers.authorization;
     let dataFromToken = verify(jwt, secret);
@@ -37,5 +37,8 @@ export default async function handler(req, res) {
       '_id': { $in: requestedBooksOperator}
   })
     res.status(200).json(requestedBooks);
+}catch(e){
+  res.status(403).json({"message":"error"})
+}
   }
 }

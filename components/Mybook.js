@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./global.module.css";
 
-const Mybook = ({ UserData, myBooks, setMyBooks,setReturnBooks }) => {
+const Mybook = ({ UserData, myBooks, setMyBooks,setReturnBooks,setLoading }) => {
   let currentUserRegistorNumber = UserData[0].Regno;
 
   let sendReturnRequest = async(bookId) => {
+    setLoading(true)
     const res = await fetch(`http://localhost:3000/api/return`, {
       method: "POST",
       headers: {
@@ -18,6 +19,7 @@ const Mybook = ({ UserData, myBooks, setMyBooks,setReturnBooks }) => {
     let response = await res.json();
   
     if(response.status = 200){
+      setLoading(false)
       let {returnBooks,myBooks} = response
       setMyBooks(myBooks)
       setReturnBooks(returnBooks)

@@ -3,7 +3,7 @@ import styles from "./global.module.css";
 // import data from '../data/data.json'
 
 
-function AboutBooks({ bookList, BooksData,jwt,setMyRequestedBooks }) {
+function AboutBooks({ bookList, BooksData,jwt,setMyRequestedBooks ,setLoading}) {
   let [currentBook, setcurrentBook] = useState([]);
 
   let handleClick = (bd) => {
@@ -12,9 +12,11 @@ function AboutBooks({ bookList, BooksData,jwt,setMyRequestedBooks }) {
   };
 
   let CurrentBookId = async(currentBook) =>{
+    setLoading(true)
     let libaryBooks =  currentBook.filter((d) => d.currentHolder === "libary")
     if(libaryBooks.length===0){
       alert('no books are available')
+      setLoading(false)
       return
     }
     let curentBookid = libaryBooks[0]._id 
@@ -30,6 +32,11 @@ function AboutBooks({ bookList, BooksData,jwt,setMyRequestedBooks }) {
       }),
     });
     let response = await res.json();
+    if(response?.message==='error'){
+           setLoading(false)
+           alert('something went to wrong')
+    }
+    setLoading(false)
     setMyRequestedBooks(response)
   }
 

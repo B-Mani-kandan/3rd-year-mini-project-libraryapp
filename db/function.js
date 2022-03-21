@@ -40,9 +40,9 @@ export const addAdmin = async() =>{
   await Admin.deleteMany({})
 
   let admin = new Admin({
-    ID:123,
-    PWD:'123',
-    Name:'Arunmani'
+    ID:8204,
+    PWD:8204,
+    Name:'danel'
   })
 
   await admin.save()

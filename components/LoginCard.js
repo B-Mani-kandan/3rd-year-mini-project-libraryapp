@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-function LoginCard() {
+function LoginCard({setLoading}) {
   let [Regno, setRegno] = useState();
   let [DOB, setDOB] = useState();
 
@@ -13,6 +13,11 @@ function LoginCard() {
   const router = useRouter();
 
   let submitHandler = async () => {
+    setLoading(true)
+    if(!Regno || !DOB){
+    setLoading(false)
+      toast("Register number or dob is wrong");
+    }
     const res = await fetch(`http://localhost:3000/api/auth`, {
       method: "POST",
       headers: {
@@ -25,9 +30,11 @@ function LoginCard() {
     });
     let response = await res.json();
     if (response.message == "Success!") {
+      setLoading(false)
       router.push("./dashboard");
     } else {
-      toast("Registor number or dob is wrong");
+    setLoading(false)
+      toast("Register number or dob is wrong");
     }
   };
 
@@ -55,13 +62,13 @@ function LoginCard() {
       </h1>
       <h2 style={{ color: "green" }}>Student Login</h2>
       <form>
-        <label htmlFor="regno">Registor number</label>
+        <label htmlFor="regno">Register number</label>
         <input
           type="text"
           id="regno"
           onChange={(e) => setRegno(e.target.value)}
         />
-        <label htmlFor="DOB">DOB(optional)</label>
+        <label htmlFor="DOB">DOB</label>
         <input type="text" id="DOB" onChange={(e) => setDOB(e.target.value)} />
         <button type="button" onClick={submitHandler}>
           Login

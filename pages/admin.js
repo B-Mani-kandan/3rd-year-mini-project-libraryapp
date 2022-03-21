@@ -2,12 +2,16 @@ import React, { useState, useEffect } from "react";
 import Book from "../components/Books";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Home.module.css";
+import Loader from "../components/Loader";
+
+
 
 const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
   let [requestedBooks, setRequestedBooks] = useState([]);
   let [studetsBookData, setStudentsBookData] = useState([]);
   let [rB,setRb] = useState([])
   let [allBooks,setallBooks] = useState(data)
+  let [loading,setLoading] = useState(false)
 
   const [title, setTitle] = useState('')
   const [author, setAuthor] = useState('')
@@ -52,6 +56,7 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
   }, []);
 
   let acceptReq = async (Regno, id) => {
+    setLoading(true)
     const res = await fetch(`http://localhost:3000/api/acceptreq`, {
       method: "POST",
       headers: {
@@ -84,10 +89,12 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
 
     setRequestedBooks(temporyData);
     setallBooks(allBooksData)
+    setLoading(false)
   };
 
 
   let acceptReturn =async (Regno,BookId) =>{
+    setLoading(true)
        const res = await fetch(`http://localhost:3000/api/acceptreturn`, {
         method: "POST",
         headers: {
@@ -116,12 +123,14 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
           });
         }
       }
+    setLoading(false)
       setRb(tempReturn)
       setallBooks(data)
   }
 
 
   let onAddBookHandler = async(BookTitle,BookAuthor,BookPublishers) =>{
+    setLoading(true)
     const res = await fetch(`http://localhost:3000/api/addbook`, {
       method: "POST",
       headers: {
@@ -134,13 +143,15 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
       }),
     });
     let response = await res.json();
+    setLoading(false)
     setallBooks(response)
   }
 
 
   return (
     <div>
-      <NavBar Regno="1212" name="Arun" />
+      <NavBar Regno="AAMEC" name="Admin" />
+      {loading && <Loader/>}
       <section style={{ maxWidth: "1100px", margin: "50px auto" }}>
         <div className={styles.main}>
           <div className={styles.booksDesign}>
@@ -207,7 +218,7 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Registor Number</th>
+                <th>Register Number</th>
                 <th>Book</th>
                 <th>Accept</th>
               </tr>
@@ -256,7 +267,7 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Registor Number</th>
+                <th>Register Number</th>
                 <th>Book</th>
                 <th>Accept</th>
               </tr>

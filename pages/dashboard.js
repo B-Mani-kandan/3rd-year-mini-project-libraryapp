@@ -4,7 +4,7 @@ import Book from "../components/Books";
 import Mybook from "../components/Mybook";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Home.module.css";
-
+import Loader from "../components/Loader";
 
 
 
@@ -18,6 +18,8 @@ const Dasboard = ({BooksData,jwt,UserData,requestedBooks,returnBooks}) => {
   let [myBooks,setMyBooks] = useState(UserData[0].Books)
 
   let [Books,setBooks] = useState(BooksData)
+
+  let [loading,setLoading] = useState(false)
   
   let totalNumberOfBooksAvaliable = Books.filter((d)=>d.currentHolder === "libary").length
 
@@ -45,6 +47,7 @@ const Dasboard = ({BooksData,jwt,UserData,requestedBooks,returnBooks}) => {
   return (
     <div>
       <NavBar Regno={UserData[0].Regno} name={UserData[0].Name}/>
+      {loading && <Loader/>}
       <main style={{ maxWidth: "1100px", margin: "50px auto" }}>
         <div className={styles.main}>
           <div className={styles.booksDesign}>
@@ -71,10 +74,10 @@ const Dasboard = ({BooksData,jwt,UserData,requestedBooks,returnBooks}) => {
         </div>
 
       <h1 style={{margin:'120px 0 30px 0',fontSize:'40px'}}>Books Mangement</h1>
-      <AboutBooks  setMyRequestedBooks={setMyRequestedBooks} bookList ={booksList()} BooksData={Books} jwt={jwt}/>
+      <AboutBooks setLoading={setLoading} setMyRequestedBooks={setMyRequestedBooks} bookList ={booksList()} BooksData={Books} jwt={jwt}/>
 
       <h1 style={{margin:'120px 0 30px 0',fontSize:'40px'}}>My Books</h1>
-      <Mybook setReturnBooks={setReturnBooks} UserData={UserData} myBooks={myBooks} setMyBooks={setMyBooks}/>
+      <Mybook setLoading={setLoading} setReturnBooks={setReturnBooks} UserData={UserData} myBooks={myBooks} setMyBooks={setMyBooks}/>
 
       <section>
       <h1 style={{margin:'120px 0 30px 0',fontSize:'40px'}}>Requested Books</h1>
