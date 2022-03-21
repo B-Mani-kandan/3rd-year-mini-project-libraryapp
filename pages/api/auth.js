@@ -12,6 +12,7 @@ export default async function handler(req, res) {
   dbConnect()
   const { method } = req
   if(method === "POST"){
+    try{
     let {Regno,DOB} = req.body
     const user = await User.findOne({ Regno,DOB})
     if(user){
@@ -37,6 +38,10 @@ export default async function handler(req, res) {
     if(!user){
         res.status(200).json({"data":"no user to be found"})
     }
+  }catch(e){
+    console.log(e)
+    res.status(401).json({"data":"no user to be found"})
+  }
   }
 //   let dats = await Book.find({})
 	// let dats = await User.find({})
