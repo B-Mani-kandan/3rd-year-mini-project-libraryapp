@@ -13,7 +13,6 @@ export default async function handler(req, res) {
   const { method } = req
   if(method === "POST"){
     let {ID,PWD} = req.body
-    console.log(PWD)
     const admin = await Admin.findOne({ ID,PWD})
 
     if(admin){
@@ -28,9 +27,7 @@ export default async function handler(req, res) {
 
       
     const serialised = serialize("OursiteJWT", token, {
-      httpOnly: true,
       secure:false,
-      sameSite: "strict",
       maxAge: 60 * 60 * 24 * 30,
       path: "/",
     });

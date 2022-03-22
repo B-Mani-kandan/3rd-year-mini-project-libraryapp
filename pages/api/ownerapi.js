@@ -2,19 +2,15 @@
 import dbConnect from "../../db/connectDb";
 import Book from "../../models/Book";
 import User from "../../models/User";
-import { verify } from "jsonwebtoken";
 import mongoose from "mongoose";
-
 import Admin from "../../models/Admin";
+import { ownerApi } from "../../functions";
 dbConnect();
 
 export default async function handler(req, res) {
-  const secret = "arunmani";
-  let jwt = req.headers.authorization;
+ 
 
-  let dataFromToken = verify(jwt, secret);
-
-  let { ID } = dataFromToken;
+  let ID = ownerApi(req)
 
   let admin = await Admin.findOne({ ID });
 

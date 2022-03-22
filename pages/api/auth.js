@@ -26,9 +26,7 @@ export default async function handler(req, res) {
 
       
     const serialised = serialize("OursiteJWT", token, {
-      httpOnly: true,
       secure:false,
-      sameSite: "strict",
       maxAge: 60 * 60 * 24 * 30,
       path: "/",
     });
@@ -39,7 +37,6 @@ export default async function handler(req, res) {
         res.status(200).json({"data":"no user to be found"})
     }
   }catch(e){
-    console.log(e)
     res.status(401).json({"data":"no user to be found"})
   }
   }
