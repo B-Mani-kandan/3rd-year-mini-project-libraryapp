@@ -1,12 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import dbConnect from "../../db/connectDb";
-import Book from "../../models/Book";
-import User from "../../models/User";
 import Admin from "../../models/Admin";
-import { verify } from "jsonwebtoken";
-import mongoose from "mongoose";
-import { addUsers ,addBooks,addAdmin} from "../../db/function";
 dbConnect();
+import { sign } from "jsonwebtoken";
+
 
 
 
@@ -17,6 +14,16 @@ export default async function handler(req, res) {
   // await addAdmin()
     let data =  await Admin.find({})
 
-    res.status(200).json(data)
+    const token = sign(
+      {
+        exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 30, // 30 days
+        ID:231,
+        Admin:true
+      },
+      'asada'
+    );
+
+
+    res.status(200).json({token})
   
 }
