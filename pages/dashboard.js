@@ -5,10 +5,12 @@ import Mybook from "../components/Mybook";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Home.module.css";
 import Loader from "../components/Loader";
+import { parseCookies } from "nookies";
+import { URL } from "../URL";
 
 
 
-const Dasboard = ({BooksData,jwt,UserData,requestedBooks,returnBooks}) => {
+const Dasboard = ({BooksData,UserData,requestedBooks,returnBooks}) => {
 
 
   let [myRequestedBooks,setMyRequestedBooks] = useState(requestedBooks)
@@ -74,7 +76,7 @@ const Dasboard = ({BooksData,jwt,UserData,requestedBooks,returnBooks}) => {
         </div>
 
       <h1 style={{margin:'120px 0 30px 0',fontSize:'40px'}}>Books Mangement</h1>
-      <AboutBooks setLoading={setLoading} setMyRequestedBooks={setMyRequestedBooks} bookList ={booksList()} BooksData={Books} jwt={jwt}/>
+      <AboutBooks setLoading={setLoading} setMyRequestedBooks={setMyRequestedBooks} bookList ={booksList()} BooksData={Books}/>
 
       <h1 style={{margin:'120px 0 30px 0',fontSize:'40px'}}>My Books</h1>
       <Mybook setLoading={setLoading} setReturnBooks={setReturnBooks} UserData={UserData} myBooks={myBooks} setMyBooks={setMyBooks}/>
@@ -110,15 +112,42 @@ const Dasboard = ({BooksData,jwt,UserData,requestedBooks,returnBooks}) => {
 
 export async function getServerSideProps(ctx) {
 
-  const { cookies } = ctx.req;
-  const jwt = cookies.OursiteJWT;
+  const { token } = parseCookies(ctx);
+
+  const data = await fetch(`${URL}/api/checkuser`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization:  token
+    },
+  });
+
+  let res =await data.json()
+
+
+  if(res.message === 'token required'){
+    return {
+      redirect: {
+        permanent: false,
+        destination: '/'
+      }
+  }
+  }
+  if(res?.user ==='admin'){
+    return {
+      redirect: {
+        permanent: false,
+        destination: '/admin'
+      }
+  }
+  }
   
   const Books = await fetch(
-    `http://localhost:3000/api/hello`,{
+    `${URL}/api/hello`,{
       headers: {
       method: 'GET',
         'Content-Type': 'application/json',
-        Authorization: jwt,
+        Authorization: token,
       }
     }
   )
@@ -130,7 +159,7 @@ export async function getServerSideProps(ctx) {
   let returnBooks = Data.returnBooks
 
   return {
-    props: { BooksData ,jwt,UserData,requestedBooks,returnBooks},
+    props: { BooksData ,UserData,requestedBooks,returnBooks}
   }
 
 }

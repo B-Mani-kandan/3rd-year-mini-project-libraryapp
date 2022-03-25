@@ -3,6 +3,8 @@ import classes from "./login.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/router";
+import cookie from "js-cookie";
+import {URL} from '../URL'
 
 function LoginAdmin({ setLoading }) {
   let [ID, setID] = useState();
@@ -15,7 +17,7 @@ function LoginAdmin({ setLoading }) {
     if (ID.length <= 0 || PWD.length <= 0) {
       setLoading(false);
     }
-    const res = await fetch(`http://localhost:3000/api/authadmin`, {
+    const res = await fetch(`${URL}/api/authadmin`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,12 +28,13 @@ function LoginAdmin({ setLoading }) {
       }),
     });
     let response = await res.json();
-    if (response.message == "Success!") {
+    if (response.token) {
+      cookie.set("token", response.token);
       setLoading(false);
       router.push("./admin");
     } else {
       setLoading(false);
-      toast("Register number or dob is wrong");
+      toast("Admin  id  or password is wrong");
     }
   };
 

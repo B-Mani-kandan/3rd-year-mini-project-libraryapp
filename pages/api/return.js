@@ -1,4 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import dbConnect from "../../db/connectDb";
 import Book from "../../models/Book";
 import User from "../../models/User";
@@ -8,10 +7,11 @@ dbConnect();
 
 export default async function handler(req, res) {
   
-  if (method === "POST") {
-    let registerNum = chechAuth(req)
+  if (req.method === "POST") {
+    try{
+    let Regno = chechAuth(req)
 
-    if(!registerNum){
+    if(!Regno){
        res.status(403).json({"message":"user not found"});
     }
 
@@ -43,5 +43,9 @@ export default async function handler(req, res) {
     });
 
     res.status(200).json({returnBooks,myBooks ,'status':200});
+  }catch{
+    res.status(403).json({message:"something went wrong"});
   }
+  }
+  
 }

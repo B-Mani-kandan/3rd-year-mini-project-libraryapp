@@ -2,25 +2,19 @@ import Link from 'next/link'
 import React from 'react'
 import styles from './global.module.css'
 import { useRouter } from "next/router";
+import cookie from "js-cookie";
+
 
 const NavBar = ({Regno,name}) => {
 
   const router = useRouter();
 
   let logoutHandler = async() =>{
-    const Books = await fetch(
-      `http://localhost:3000/api/logout`
-      )
-     
-      let res = await Books.json()
-    
-      console.log(res)
-
-      if (res.message == 'Successfuly logged out!') {
-        router.push("/");
-      }
-      
+      cookie.remove("token");
+      router.push("/");
   }
+
+
   return (
     <nav className={styles.nav}>
 

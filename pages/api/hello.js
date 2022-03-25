@@ -11,6 +11,7 @@ export default async function handler(req, res) {
  const secret = "arunmani";
  let jwt =   req.headers.authorization
 
+
  let dataFromToken =  verify(jwt, secret);
 
  let Regno = dataFromToken.Regno

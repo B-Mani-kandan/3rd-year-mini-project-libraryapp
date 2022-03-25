@@ -2,15 +2,15 @@ import { verify } from "jsonwebtoken";
 import User from "../../models/User";
 import Book from "../../models/Book";
 import mongoose from 'mongoose'
+import { ownerApi } from "../../functions";
+
 
 export default async function handler (req, res) {
   try {
-    const jwt = req.cookies.OursiteJWT;
-
-    const secret = "arunmani";
-
-    verify(jwt, secret);
-
+    let ID = ownerApi(req)
+    if(!ID){
+    res.status(403).json({ message: "forbidden" });
+    }
     if (req.method === "POST") {
     
       const { Regno, BookId } = req.body;

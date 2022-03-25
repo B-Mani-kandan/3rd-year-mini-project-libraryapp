@@ -3,6 +3,9 @@ import Book from "../components/Books";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Home.module.css";
 import Loader from "../components/Loader";
+import { parseCookies } from "nookies";
+import cookie from "js-cookie";
+import { URL } from "../URL";
 
 
 
@@ -57,10 +60,11 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
 
   let acceptReq = async (Regno, id) => {
     setLoading(true)
-    const res = await fetch(`http://localhost:3000/api/acceptreq`, {
+    const res = await fetch(`${URL}/api/acceptreq`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization:  cookie.get("token")
       },
       body: JSON.stringify({
         Regno,
@@ -95,10 +99,11 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
 
   let acceptReturn =async (Regno,BookId) =>{
     setLoading(true)
-       const res = await fetch(`http://localhost:3000/api/acceptreturn`, {
+       const res = await fetch(`${URL}/api/acceptreturn`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+            Authorization:  cookie.get("token")
         },
         body: JSON.stringify({
           Regno,
@@ -131,10 +136,11 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
 
   let onAddBookHandler = async(BookTitle,BookAuthor,BookPublishers) =>{
     setLoading(true)
-    const res = await fetch(`http://localhost:3000/api/addbook`, {
+    const res = await fetch(`${URL}/api/addbook`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Authorization:  cookie.get("token")
       },
       body: JSON.stringify({
         BookTitle,
@@ -334,14 +340,42 @@ const Admin = ({ dataTOsendForRequest, data ,returnBookData}) => {
 };
 
 export async function getServerSideProps(ctx) {
-  const { cookies } = ctx.req;
-  const jwt = cookies.OursiteJWT;
+  
+  const { token } = parseCookies(ctx);
 
-  const Books = await fetch(`http://localhost:3000/api/ownerapi`, {
+  const dataAdmin = await fetch(`${URL}/api/checkuser`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization:  token
+    },
+  });
+
+  let res =await dataAdmin.json()
+
+
+  if(res.message === 'token required'){
+    return {
+      redirect: {
+        permanent: false,
+        destination: '/'
+      }
+  }
+  }
+  if(res?.user ==='user'){
+    return {
+      redirect: {
+        permanent: false,
+        destination: '/dashboard'
+      }
+  }
+  }
+
+  const Books = await fetch(`${URL}/api/ownerapi`, {
     headers: {
       method: "GET",
       "Content-Type": "application/json",
-      Authorization: jwt,
+      Authorization: token,
     },
   });
   const Data = await Books.json();

@@ -11,7 +11,6 @@ async function dbConnect() {
     // await mongoose.connect('mongodb://localhost:27017/libaryappnew', { useNewUrlParser: true,useUnifiedTopology: true, });
   } catch (error) {
     console.log(error);
-    process.exit(1);
   }
 }
 

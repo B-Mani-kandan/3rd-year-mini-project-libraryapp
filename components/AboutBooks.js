@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styles from "./global.module.css";
-// import data from '../data/data.json'
+import cookie from "js-cookie";
+import {URL} from '../URL'
 
 
-function AboutBooks({ bookList, BooksData,jwt,setMyRequestedBooks ,setLoading}) {
+function AboutBooks({ bookList, BooksData,setMyRequestedBooks ,setLoading}) {
   let [currentBook, setcurrentBook] = useState([]);
 
   let handleClick = (bd) => {
@@ -21,11 +22,11 @@ function AboutBooks({ bookList, BooksData,jwt,setMyRequestedBooks ,setLoading}) 
     }
     let curentBookid = libaryBooks[0]._id 
     
-    const res = await fetch(`http://localhost:3000/api/add`, {
+    const res = await fetch(`${URL}/api/add`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: jwt
+        Authorization:  cookie.get("token")
       },
       body: JSON.stringify({
         bookid:curentBookid
