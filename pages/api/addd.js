@@ -2,21 +2,14 @@
 import dbConnect from "../../db/connectDb";
 import Admin from "../../models/Admin";
 dbConnect();
+import { addUsers } from "../../db/function";
 
-
-
-
-export default async function handler( res) {
+export default async function handler(res) {
   // await addUsers()
-  // await addUsers()
+  // await addUsers();
   // await addBooks()
   // await addAdmin()
-    // let data =  await Admin.find({})
+  // let data =  await Admin.find({})
 
-    
-
-
-
-    res.status(200).json({data})
-  
+  res.status(200).json({ data });
 }
